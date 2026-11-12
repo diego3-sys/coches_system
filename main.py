@@ -61,7 +61,6 @@ class App:
         self.asientos.pack(pady=5)
         
         Button(self.ventana,text=":: Agregar ::",command=lambda:{self.insertar_coche_controller(),self.insertar_coche_view()}).pack(pady=5)
-        
         Button(self.ventana,text=":: Regresar ::",command=self.menu_acciones).pack(pady=5)
        
     def eliminar_coche_view(self):
@@ -74,7 +73,6 @@ class App:
         self.id.pack(pady=5)
         
         Button(self.ventana,text=":: Eliminar ::",command=lambda:{self.eliminar_coche_controller(),self.eliminar_coche_view()}).pack(pady=5)
-        
         Button(self.ventana,text=":: Regresar ::",command=self.menu_acciones).pack(pady=5)
         
     def consultar_coche_view(self):
